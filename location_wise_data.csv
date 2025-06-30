@@ -1,0 +1,12 @@
+Group_ID,Folder_Name,Start_Coordinates,End_Coordinates,Start_Location,End_Location,Number_of_Images
+0,Balikashram_Road_1,"19.100088, 74.732057","19.102659, 74.737836",Balikashram_Road,Sarjepura Road,96
+1,NH61_1,"19.097163, 74.696453","19.098754, 74.689759",NH61,NH61,49
+2,State_Highway_10_1,"19.157595, 74.704639","19.114341, 74.7251",State_Highway_10,Ahilyanagar,559
+3,Bilma_1,"19.16859, 14.67772","19.16859, 14.67772",Bilma,Bilma,1
+4,Shevgaon_1,"19.381422, 75.178145","19.385754, 75.170842",Shevgaon,Newasa Shevgaon Road,12
+5,Newasa_Shevgaon_Road_1,"19.396424, 75.149482","19.402149, 75.139092",Newasa_Shevgaon_Road,Newasa Shevgaon Road,25
+6,MDR35_1,"19.366998, 75.120062","19.319811, 75.095381",MDR35,MDR45,107
+7,MDR45_1,"19.312095, 75.1106","19.295296, 75.140081",MDR45,MDR45,13
+8,Ahilyanagar_1,"19.033428, 74.804499","19.065709, 74.820894",Ahilyanagar,Ahilyanagar,44
+9,Ahilyanagar_2,"19.078298, 74.830372","19.088648, 74.833723",Ahilyanagar,Ahilyanagar,44
+10,Bilma_2,"19.156257, 14.105284","19.155598, 14.105608",Bilma,Bilma,2
