@@ -7,6 +7,7 @@ A complete, GUI-based toolkit for automated road image processing, detection, ca
 ## 📁 Recommended Folder Structure
 
 ```
+/YOLO_model
 /videos
     road_clip1.mp4
 /extracted_frames
@@ -50,18 +51,18 @@ A complete, GUI-based toolkit for automated road image processing, detection, ca
 
 * **Round 1:** Predict on preprocessed images.
 
-  * Low-confidence detections separated.
-  * No-detection images separated.
-* **Post-process:** Enhance low-confidence images.
+  * Low-confidence and no detections images separated.
+* **Post-process:** Enhance low-confidence and no detection images.
 * **Round 2:** Predict on post-processed images.
 
   * Remaining no-detection images separated.
 * **Round 3:** Predict on original no-detection images (without processing).
+* manually label no detection images if needed.
 * Merges all final predictions for unified output.
 
-### 4️⃣ Post-Processing Low Confidence Images
+### 4️⃣ Post-Processing Images
 
-* Enhances low-confidence images with sharpening and optional blur.
+* Enhances low-confidence and no detection images with sharpening and optional blur.
 * Increases chances of successful re-prediction.
 
 ### 5️⃣ Merge Final Predictions
@@ -96,7 +97,7 @@ A complete, GUI-based toolkit for automated road image processing, detection, ca
 ### 9️⃣ Categorize by Labels within Locations
 
 * Categorizes images inside each location group based on YOLO annotations.
-* Organizes images by damage type, road conditions, etc., as per label classes.
+* Organizes images by cracks, potholes, lane marks, etc., as per label classes.
 
 ### 🔟 Generate Summary Report
 
@@ -137,7 +138,7 @@ A complete, GUI-based toolkit for automated road image processing, detection, ca
    * Extract Frames
    * Preprocess Images
    * Run Predictions (3 rounds)
-   * Post-process Low Confidence Images
+   * Post-process Images
    * Merge Predictions
    * Extract GPS & Timestamp
    * Group by Location
