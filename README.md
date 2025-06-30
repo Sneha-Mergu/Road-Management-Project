@@ -33,12 +33,12 @@ A complete, GUI-based toolkit for automated road image processing, detection, ca
 
 ## 🚀 Features & Workflow
 
-### 1️ Frame Extraction
+### 1️. Frame Extraction
 
 * Extracts keyframes from road videos using histogram-based scene detection.
 * User-adjustable histogram threshold and frame interval for frame extraction.
 
-### 2️ Image Preprocessing
+### 2️. Image Preprocessing
 
 * Enhances extracted frames by adjusting:
 
@@ -47,7 +47,7 @@ A complete, GUI-based toolkit for automated road image processing, detection, ca
   * Sharpening
 * Prepares better quality images for detection.
 
-### 3️ Prediction & Sorting (Multi-Round YOLO Detection)
+### 3️. Prediction & Sorting (Multi-Round YOLO Detection)
 
 * **Round 1:** Predict on preprocessed images.
 
@@ -60,22 +60,22 @@ A complete, GUI-based toolkit for automated road image processing, detection, ca
 * manually label no detection images if needed.
 * Merges all final predictions for unified output.
 
-### 4️ Post-Processing Images
+### 4️. Post-Processing Images
 
 * Enhances low-confidence and no detection images with sharpening and optional blur.
 * Increases chances of successful re-prediction.
 
-### 5️ Merge Final Predictions
+### 5️. Merge Final Predictions
 
 * Combines labels and images from all prediction rounds.
 * Creates unified label and image folders for downstream tasks.
 
-### 6️ Copy Predicted Originals (For GPS Extraction)
+### 6️. Copy Predicted Originals (For GPS Extraction)
 
 * Copies original images corresponding to successful detections.
 * Ensures GPS & timestamp extraction is based on unaltered images.
 
-### 7️ GPS & Timestamp Extraction (OCR-based)
+### 7️. GPS & Timestamp Extraction (OCR-based)
 
 * Uses OCR to extract timestamps and GPS coordinates from image overlays.
 * Generates a CSV: `gps_data.csv` with:
@@ -85,7 +85,7 @@ A complete, GUI-based toolkit for automated road image processing, detection, ca
   * Latitude
   * Longitude
 
-### 8️ Group Images by Location (DBSCAN Clustering)
+### 8️. Group Images by Location (DBSCAN Clustering)
 
 * Clusters images based on GPS coordinates.
 * Creates structured folders for each location.
@@ -94,12 +94,12 @@ A complete, GUI-based toolkit for automated road image processing, detection, ca
   * `location_groups` folder with grouped images
   * `location_wise_data.csv` with location details
 
-### 9️ Categorize by Labels within Locations
+### 9️. Categorize by Labels within Locations
 
 * Categorizes images inside each location group based on YOLO annotations.
 * Organizes images by cracks, potholes, lane marks, etc., as per label classes.
 
-### 10 Generate Summary Report
+### 10. Generate Summary Report
 
 * Generates `summary_reports.csv` with:
 
@@ -107,7 +107,7 @@ A complete, GUI-based toolkit for automated road image processing, detection, ca
   * Category breakdowns
   * Useful statistics for reporting
 
-### 11 Manual Image Labeling Tool
+### 11. Manual Image Labeling Tool
 
 * GUI-based tool for drawing bounding boxes & assigning labels.
 * Supports:
