@@ -178,6 +178,4 @@ A complete, GUI-based toolkit for automated road image processing, detection, ca
 
 ---
 
-## 👩‍💻 Developed By
-
-**Mergu Sneha Krishnahari**
+## 👩‍💻 Developed By **Mergu Sneha Krishnahari**
